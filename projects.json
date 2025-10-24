@@ -1,0 +1,244 @@
+[
+  {
+    "id": "ocean-shader",
+    "href": "project-template.html?id=ocean-shader",
+    "imgSrc": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Real‑Time Ocean Shader",
+    "title": "Real‑Time Ocean Shader",
+    "year": "2025",
+    "description": "FFT waves, SSR, foam via curvature. GLSL/WebGL.",
+    "tags": ["GLSL", "WebGL", "PBR"],
+    "dateCompleted": "March 2025",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/ocean-shader",
+    "gameURL": null,
+    "features": [
+      "Real-time Fast Fourier Transform (FFT) for wave generation.",
+      "Screen-Space Reflections (SSR) for water surface.",
+      "Foam simulation based on wave curvature.",
+      "Physically-Based Rendering (PBR) material properties."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": "https://www.youtube.com/embed/oHg5SJYRHA0",
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "gpu-boids",
+    "href": "project-template.html?id=gpu-boids",
+    "imgSrc": "https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "GPU‑Accelerated Boids",
+    "title": "GPU‑Accelerated Boids",
+    "year": "2024",
+    "description": "100k agents at 60fps via compute + spatial hashing.",
+    "tags": ["WebGPU", "Simulation"],
+    "dateCompleted": "December 2024",
+    "projectType": "Group",
+    "githubURL": "https://github.com/yourhandle/boids",
+    "gameURL": "https://yourhandle.github.io/boids-demo/",
+    "features": [
+      "Spatial hashing for efficient neighbor lookups.",
+      "WebGPU compute shader for parallel agent updates.",
+      "Instanced rendering for 100k+ agents."
+    ],
+    "myFeatures": [
+      "Implemented the core compute shader logic.",
+      "Designed and built the spatial hash grid."
+    ],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "path-tracer",
+    "href": "project-template.html?id=path-tracer",
+    "imgSrc": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Path Tracer in 1K Lines",
+    "title": "Path Tracer in 1K Lines",
+    "year": "2024",
+    "description": "MIS, glossy conductors, compact SAH BVH in C++.",
+    "tags": ["C++", "Ray Tracing"],
+    "dateCompleted": "September 2024",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/path-tracer",
+    "gameURL": null,
+    "features": [
+      "Recursive Whitted-style path tracing.",
+      "Support for diffuse, glossy, and dielectric materials.",
+      "Multiple Importance Sampling (MIS) for faster convergence.",
+      "Compact SAH BVH for acceleration."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "volumetric-clouds",
+    "href": "project-template.html?id=volumetric-clouds",
+    "imgSrc": "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Volumetric Clouds",
+    "title": "Volumetric Clouds",
+    "year": "2025",
+    "description": "HG phase, temporal reprojection, blue‑noise dither.",
+    "tags": ["Noise", "Marching", "Atmospherics"],
+    "dateCompleted": "January 2025",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/clouds",
+    "gameURL": null,
+    "features": [
+      "Ray marching through 3D noise texture.",
+      "Henyey-Greenstein phase function for realistic light scattering.",
+      "Temporal reprojection to reduce noise.",
+      "Blue-noise dithering."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "city-generator",
+    "href": "project-template.html?id=city-generator",
+    "imgSrc": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Procedural City Generator",
+    "title": "Procedural City Generator",
+    "year": "2023",
+    "description": "Grammar‑driven blocks, spline roads, instancing.",
+    "tags": ["L‑systems", "Editor", "Python"],
+    "dateCompleted": "May 2023",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/city-gen",
+    "gameURL": null,
+    "features": [
+      "L-system grammar for road network generation.",
+      "Spline-based road rendering.",
+      "GPU instancing for efficient building rendering.",
+      "Python-based editor for controlling parameters."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "material-scanner",
+    "href": "project-template.html?id=material-scanner",
+    "imgSrc": "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Material Scanner Tool",
+    "title": "Material Scanner Tool",
+    "year": "2024",
+    "description": "PBR texture capture + calibration workflow.",
+    "tags": ["PBR", "Tools"],
+    "dateCompleted": "June 2024",
+    "projectType": "Tech",
+    "githubURL": "https://github.com/yourhandle/scanner",
+    "gameURL": null,
+    "features": [
+      "Photometric stereo for normal map generation.",
+      "Delighting process to extract albedo.",
+      "Calibration workflow using color checker.",
+      "Generates full PBR texture set (Albedo, Normal, Roughness, Metallic)."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "terrain-lod",
+    "href": "project-template.html?id=terrain-lod",
+    "imgSrc": "https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Terrain LOD System",
+    "title": "Terrain LOD System",
+    "year": "2023",
+    "description": "Quad‑trees, geomorphing, GPU frustum culling.",
+    "tags": ["LOD", "Culling"],
+    "dateCompleted": "November 2023",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/terrain-lod",
+    "gameURL": null,
+    "features": [
+      "Quad-tree based terrain chunks.",
+      "Geomorphing to hide LOD transitions.",
+      "GPU-based frustum culling."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "fluid-sandbox",
+    "href": "project-template.html?id=fluid-sandbox",
+    "imgSrc": "https://images.unsplash.com/photo-1520975954732-35dd2229963a?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "Interactive Fluid Sandbox",
+    "title": "Interactive Fluid Sandbox",
+    "year": "2025",
+    "description": "Stable fluids + pressure solve on GPU.",
+    "tags": ["Simulation", "Compute"],
+    "dateCompleted": "May 2025",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/fluid-sim",
+    "gameURL": "https://yourhandle.github.io/fluid-demo/",
+    "features": [
+      "Jos Stam's 'Stable Fluids' method.",
+      "Pressure solve using Jacobi iteration on the GPU.",
+      "Interactive (mouse-driven) dye and velocity injection."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1520975954732-35dd2229963a?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  },
+  {
+    "id": "shader-gallery",
+    "href": "project-template.html?id=shader-gallery",
+    "imgSrc": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
+    "imgAlt": "WebGL Shader Gallery",
+    "title": "WebGL Shader Gallery",
+    "year": "2024",
+    "description": "A curated set of real‑time shader experiments.",
+    "tags": ["GLSL", "Web"],
+    "dateCompleted": "Ongoing",
+    "projectType": "Individual",
+    "githubURL": "https://github.com/yourhandle/shader-gallery",
+    "gameURL": null,
+    "features": [
+      "Collection of various shader effects (e.g., noise, ray marching).",
+      "Minimalist web interface to browse shaders.",
+      "Live-editable code for experimenting."
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": null,
+      "images": [
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  }
+]

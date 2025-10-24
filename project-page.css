@@ -1,0 +1,70 @@
+/* Add this to your project */
+
+/* Styles for the project detail page */
+.project-page .container {
+  max-width: 900px;
+}
+
+.project-header {
+  padding: 24px 0 32px;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 32px;
+}
+.project-header h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+.project-meta {
+  display: flex;
+  gap: 14px;
+  font-size: 1.05rem;
+  color: var(--fg);
+  margin-bottom: 18px;
+}
+.project-meta span:first-child {
+  font-weight: 600;
+}
+
+.project-media {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.project-media .video-wrap {
+  padding: 0; /* Remove padding from showreel card style */
+  background: black; /* Ensure bg for video */
+}
+.project-image {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--card-border);
+}
+
+.project-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+/* If there are two cards (features + my work), split them */
+@media (min-width: 700px) {
+  .project-details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.features-card {
+  padding: 20px 24px;
+}
+.features-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+}
+.features-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #d7d7dc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
