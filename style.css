@@ -97,15 +97,6 @@ body{
 }
 .btn-ghost:hover{ background:#1a1a1d; }
 
-.skills{
-  list-style:none; padding:0; margin:18px 0 0;
-  display:grid; gap:10px; grid-template-columns: repeat(3, minmax(0,1fr));
-  max-width:420px;
-}
-.skills li{
-  border:1px solid #2a2a2e; border-radius:12px; padding:8px 10px; text-align:center; font-size:.9rem; color:#e9e9ee;
-}
-
 /* Showreel card */
 .card{
   background:linear-gradient(0deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)) , var(--card);
