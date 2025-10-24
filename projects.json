@@ -1,15 +1,15 @@
 [
   {
-    "id": "ocean-shader",
-    "href": "project-template.html?id=ocean-shader",
+    "id": "area-51",
+    "href": "project-template.html?id=area-51",
     "imgSrc": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Real‑Time Ocean Shader",
-    "title": "Real‑Time Ocean Shader",
-    "year": "2025",
+    "imgAlt": "2D Unity Game - Area 51",
+    "title": "2D Unity Game - Area 51",
+    "year": "2022",
     "description": "FFT waves, SSR, foam via curvature. GLSL/WebGL.",
-    "tags": ["GLSL", "WebGL", "PBR"],
+    "tags": ["Unity", "C#", "2D Game Development"],
     "dateCompleted": "March 2025",
-    "projectType": "Individual",
+    "projectType": "Group",
     "githubURL": "https://github.com/yourhandle/ocean-shader",
     "gameURL": null,
     "features": [
@@ -20,21 +20,21 @@
     ],
     "myFeatures": [],
     "media": {
-      "videoURL": "https://www.youtube.com/embed/oHg5SJYRHA0",
+      "videoURL": "https://www.youtube.com/embed/tGzSuIxrd4Y?si=NYrvnHC4g97LRgFZ",
       "images": [
         "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
       ]
     }
   },
   {
-    "id": "gpu-boids",
-    "href": "project-template.html?id=gpu-boids",
-    "imgSrc": "https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "GPU‑Accelerated Boids",
-    "title": "GPU‑Accelerated Boids",
+    "id": "hell-for-leather",
+    "href": "project-template.html?id=hell-for-leather",
+    "imgSrc": "assets/hell for leather 1.png",
+    "imgAlt": "Hell For Leather",
+    "title": "Hell For Leather",
     "year": "2024",
     "description": "100k agents at 60fps via compute + spatial hashing.",
-    "tags": ["WebGPU", "Simulation"],
+    "tags": ["OpenGL", "C++", "PBR"],
     "dateCompleted": "December 2024",
     "projectType": "Group",
     "githubURL": "https://github.com/yourhandle/boids",
@@ -49,9 +49,11 @@
       "Designed and built the spatial hash grid."
     ],
     "media": {
-      "videoURL": null,
+      "videoURL": "https://www.youtube.com/embed/QgssG5bXjFo?si=9eT8u6Q6Fw-Kn3UR",
       "images": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop"
+        "assets/hell for leather 1.png",
+        "assets/hell for leather 2.png",
+        "assets/hell for leather 3.png"
       ]
     }
   },
