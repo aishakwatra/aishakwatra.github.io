@@ -30,28 +30,38 @@
   display: grid;
   gap: 18px;
   margin-bottom: 24px;
+  /* Default to 1-column for mobile */
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .project-media {
+    /* 2-column grid on screens > 600px wide */
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .project-media .video-wrap {
-  padding: 0; /* Remove padding from showreel card style */
-  background: black; /* Ensure bg for video */
+  /* This new line makes it span both columns */
+  grid-column: 1 / -1; 
+  padding: 0;
+  background: black;
 }
+
 .project-image {
   width: 100%;
+  /* These two new lines make the grid look clean */
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+
   border-radius: var(--radius);
   border: 1px solid var(--card-border);
 }
-
 .project-details-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
 }
-/* If there are two cards (features + my work), split them */
-@media (min-width: 700px) {
-  .project-details-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 .features-card {
   padding: 20px 24px;
@@ -67,4 +77,20 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.project-description {
+  font-size: 1.05rem;
+  color: #d7d7db; 
+  max-width: 65ch; 
+  margin-bottom: 24px; 
+  margin-top: 0; 
+}
+
+.feature-legend {
+  font-size: 0.8rem;    /* Makes it noticeably smaller */
+  font-style: normal;   /* Removes italic to look cleaner */
+  color: #888;         /* A lighter, more subtle gray */
+  margin-top: -10px;   /* Tucks it up under the H3 */
+  margin-bottom: 16px;  /* Adds a bit more space before the list */
 }

@@ -121,6 +121,13 @@ body{
   font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin:0 0 6px;
 }
 
+.feature-list li.my-contribution {
+  
+  color: var(--accent); /* This changes it from blue to white */
+  font-weight: 600;
+
+}
+
 /* Project grid */
 .grid{
   display:grid;

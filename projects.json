@@ -1,31 +1,6 @@
 [
-  {
-    "id": "area-51",
-    "href": "project-template.html?id=area-51",
-    "imgSrc": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "2D Unity Game - Area 51",
-    "title": "2D Unity Game - Area 51",
-    "year": "2022",
-    "description": "FFT waves, SSR, foam via curvature. GLSL/WebGL.",
-    "tags": ["Unity", "C#", "2D Game Development"],
-    "dateCompleted": "March 2025",
-    "projectType": "Group",
-    "githubURL": "https://github.com/yourhandle/ocean-shader",
-    "gameURL": null,
-    "features": [
-      "Real-time Fast Fourier Transform (FFT) for wave generation.",
-      "Screen-Space Reflections (SSR) for water surface.",
-      "Foam simulation based on wave curvature.",
-      "Physically-Based Rendering (PBR) material properties."
-    ],
-    "myFeatures": [],
-    "media": {
-      "videoURL": "https://www.youtube.com/embed/tGzSuIxrd4Y?si=NYrvnHC4g97LRgFZ",
-      "images": [
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
-      ]
-    }
-  },
+
+  
   {
     "id": "hell-for-leather",
     "href": "project-template.html?id=hell-for-leather",
@@ -33,21 +8,24 @@
     "imgAlt": "Hell For Leather",
     "title": "Hell For Leather",
     "year": "2024",
-    "description": "100k agents at 60fps via compute + spatial hashing.",
+    "description": "OpenGL Racing Game with a Physically Based Rendering (PBR) pipeline, custom vehicle physics, and optimized real-time collision and suspension dynamics.",
+    "longDescription": "This 3D racing simulation was a third-year OpenGL project focused on implementing advanced graphics and physics systems from the ground up. The project features a complete Physically Based Rendering (PBR) pipeline for realistic, physically-grounded materials and lighting, all set within a 3D skybox. A core technical component is the optimized collision engine, which uses a spatial grid to accelerate queries. This allows for real-time suspension physics (via ray-triangle intersection queries) and accurate track collisions (via AABB checks). The demo is complete with vehicle physics, a flexible follow-cam, 3D model loading via Assimp, and a full UI with a lap timer.",
     "tags": ["OpenGL", "C++", "PBR"],
-    "dateCompleted": "December 2024",
-    "projectType": "Group",
-    "githubURL": "https://github.com/yourhandle/boids",
-    "gameURL": "https://yourhandle.github.io/boids-demo/",
+    "dateCompleted": "2024",
+    "projectType": "Pair Project",
+    "githubURL": "https://github.com/aishakwatra/racingsimulation",
+    "gameURL": "https://matt-pongsagon.itch.io/hell-for-leather-opengl-ddct",
     "features": [
-      "Spatial hashing for efficient neighbor lookups.",
-      "WebGPU compute shader for parallel agent updates.",
-      "Instanced rendering for 100k+ agents."
+      { "name": "Physically Based Rendering (PBR) for realistic lighting and materials on the car and track.", "isMine": true },
+      { "name": "Optimized Collision Detection: Employs a spatial grid to accelerate all collision queries. This structure enables fast ray-triangle intersection queries (with all four wheels) and AABB-triangle checks (for side impacts against the track's geometry).", "isMine": true },
+      { "name": "Flexible Camera Controller: Features a dynamic follow-cam that tracks the car, pulling back at high speeds and shifting during turns. The system also allows the user to take manual control and orbit the camera.", "isMine": false },
+      { "name": "Sound Management: A central sound system manages all game audio, like engine sounds and effects.", "isMine": true },
+      { "name": "UI & Text: Renders text on-screen for the HUD, including a lap timer, best lap display, and a car selection menu.", "isMine": true },
+      { "name": "Vehicle Physics: Includes handling for acceleration, braking, steering and jumping to make the driving feel more believable.", "isMine": false },
+      { "name": "Lap Timer: Uses a 3D trigger volume at the finish line to accurately track lap times and save the best-lap record.", "isMine": true },
+      { "name": "3D Environment: Skybox to create the 3D sky and background.", "isMine": false }
     ],
-    "myFeatures": [
-      "Implemented the core compute shader logic.",
-      "Designed and built the spatial hash grid."
-    ],
+    "myFeatures": [],
     "media": {
       "videoURL": "https://www.youtube.com/embed/QgssG5bXjFo?si=9eT8u6Q6Fw-Kn3UR",
       "images": [
@@ -58,188 +36,62 @@
     }
   },
   {
-    "id": "path-tracer",
-    "href": "project-template.html?id=path-tracer",
-    "imgSrc": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Path Tracer in 1K Lines",
-    "title": "Path Tracer in 1K Lines",
+    "id": "cuda-raytrace",
+    "href": "project-template.html?id=cuda-raytrace",
+    "imgSrc": "assets/cuda1.png",
+    "imgAlt": "Real time Ray Tracing with CUDA",
+    "title": "Real time Ray Tracing with CUDA",
     "year": "2024",
-    "description": "MIS, glossy conductors, compact SAH BVH in C++.",
-    "tags": ["C++", "Ray Tracing"],
-    "dateCompleted": "September 2024",
-    "projectType": "Individual",
-    "githubURL": "https://github.com/yourhandle/path-tracer",
-    "gameURL": null,
+    "description": "An extension of a professor-provided real-time CUDA ray tracing engine. The project implements ray tracing for triangles, procedurally generated object textures, interactive camera movements, and dynamic collision detection in real-time.",
+    "longDescription": "This project is an interactive mini-game built for a low-level programming class, extending a real-time CUDA ray tracing engine provided by my professor. The experience takes the user through multiple unique rooms using WASD controls. It begins in an Infinity Mirrors room, inspired by Yayoi Kusama, which uses highly reflective surfaces to create a visually infinite space. The final room features dynamic, floating spheres that collide and bounce off the environment in real-time.",
+    "tags": ["CUDA", "C++", "Parallel Programming"],
+    "dateCompleted": "2024",
+    "projectType": "Individual Project",
+    "githubURL": "https://github.com/pongsagon/DDCT_CUDA_Raytrace",
+    "gameURL": "https://matt-pongsagon.itch.io/cuda-raytrace-ddct",
     "features": [
-      "Recursive Whitted-style path tracing.",
-      "Support for diffuse, glossy, and dielectric materials.",
-      "Multiple Importance Sampling (MIS) for faster convergence.",
-      "Compact SAH BVH for acceleration."
+      { "name": "Extended the ray tracer to render complex triangle meshes, not just the original spheres.", "isMine": true },
+      { "name": "Implemented real-time physics for sphere-to-sphere and sphere-to-triangle-surface collisions.", "isMine": true },
+      { "name": "Procedurally generated unique patterns for the surface materials.", "isMine": true },
+      { "name": "Created a system for materials and colors to update dynamically based on user interaction.", "isMine": true },
+      { "name": "Designed a multi-room experience with WASD navigation.", "isMine": true },
+      { "name": "Built a dynamic scene where floating, refractive spheres realistically bounce off surfaces and eachother", "isMine": true }
     ],
     "myFeatures": [],
     "media": {
-      "videoURL": null,
+      "videoURL": "https://www.youtube.com/embed/6XbfCoaFQCI?si=uEWPyFNPpgSCWcGU",
       "images": [
-        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+        "assets/cuda1.png",
+        "assets/cuda2.png"
       ]
     }
   },
   {
-    "id": "volumetric-clouds",
-    "href": "project-template.html?id=volumetric-clouds",
-    "imgSrc": "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Volumetric Clouds",
-    "title": "Volumetric Clouds",
-    "year": "2025",
-    "description": "HG phase, temporal reprojection, blue‑noise dither.",
-    "tags": ["Noise", "Marching", "Atmospherics"],
-    "dateCompleted": "January 2025",
-    "projectType": "Individual",
-    "githubURL": "https://github.com/yourhandle/clouds",
+    "id": "area-51",
+    "href": "project-template.html?id=area-51",
+    "imgSrc": "assets/area51-1.png",
+    "imgAlt": "Area51 - They can't stop us all",
+    "title": "Area51 - They can't stop us all",
+    "year": "2022",
+    "description": "A 2D Platformer game developed on Unity for a term project in my first year.",
+    "longDescription": "This project was a 2D Platformer game developed for a first-year term project using Unity and C#. The goal was to learn the fundamentals of the Unity engine, including physics, sprite management, and level design. We explored techniques for wave generation and basic rendering.",
+    "tags": ["Unity", "C#", "2D Game Development"],
+    "dateCompleted": "December 2022",
+    "projectType": "Group",
+    "githubURL": "https://github.com/Vibhumi-Sermsilp/DT130-SEM1-2022",
     "gameURL": null,
     "features": [
-      "Ray marching through 3D noise texture.",
-      "Henyey-Greenstein phase function for realistic light scattering.",
-      "Temporal reprojection to reduce noise.",
-      "Blue-noise dithering."
+      { "name": "Real-time Fast Fourier Transform (FFT) for wave generation.", "isMine": false },
+      { "name": "Screen-Space Reflections (SSR) for water surface.", "isMine": false },
+      { "name": "Foam simulation based on wave curvature.", "isMine": false },
+      { "name": "Physically-Based Rendering (PBR) material properties.", "isMine": false }
     ],
     "myFeatures": [],
     "media": {
-      "videoURL": null,
+      "videoURL": "https://www.youtube.com/embed/tGzSuIxrd4Y?si=NYrvnHC4g97LRgFZ",
       "images": [
-        "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?q=80&w=1200&auto=format&fit=crop"
-      ]
-    }
-  },
-  {
-    "id": "city-generator",
-    "href": "project-template.html?id=city-generator",
-    "imgSrc": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Procedural City Generator",
-    "title": "Procedural City Generator",
-    "year": "2023",
-    "description": "Grammar‑driven blocks, spline roads, instancing.",
-    "tags": ["L‑systems", "Editor", "Python"],
-    "dateCompleted": "May 2023",
-    "projectType": "Individual",
-    "githubURL": "https://github.com/yourhandle/city-gen",
-    "gameURL": null,
-    "features": [
-      "L-system grammar for road network generation.",
-      "Spline-based road rendering.",
-      "GPU instancing for efficient building rendering.",
-      "Python-based editor for controlling parameters."
-    ],
-    "myFeatures": [],
-    "media": {
-      "videoURL": null,
-      "images": [
-        "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=1200&auto=format&fit=crop"
-      ]
-    }
-  },
-  {
-    "id": "material-scanner",
-    "href": "project-template.html?id=material-scanner",
-    "imgSrc": "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Material Scanner Tool",
-    "title": "Material Scanner Tool",
-    "year": "2024",
-    "description": "PBR texture capture + calibration workflow.",
-    "tags": ["PBR", "Tools"],
-    "dateCompleted": "June 2024",
-    "projectType": "Tech",
-    "githubURL": "https://github.com/yourhandle/scanner",
-    "gameURL": null,
-    "features": [
-      "Photometric stereo for normal map generation.",
-      "Delighting process to extract albedo.",
-      "Calibration workflow using color checker.",
-      "Generates full PBR texture set (Albedo, Normal, Roughness, Metallic)."
-    ],
-    "myFeatures": [],
-    "media": {
-      "videoURL": null,
-      "images": [
-        "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop"
-      ]
-    }
-  },
-  {
-    "id": "terrain-lod",
-    "href": "project-template.html?id=terrain-lod",
-    "imgSrc": "https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Terrain LOD System",
-    "title": "Terrain LOD System",
-    "year": "2023",
-    "description": "Quad‑trees, geomorphing, GPU frustum culling.",
-    "tags": ["LOD", "Culling"],
-    "dateCompleted": "November 2023",
-    "projectType": "Individual",
-    "githubURL": "https://github.com/yourhandle/terrain-lod",
-    "gameURL": null,
-    "features": [
-      "Quad-tree based terrain chunks.",
-      "Geomorphing to hide LOD transitions.",
-      "GPU-based frustum culling."
-    ],
-    "myFeatures": [],
-    "media": {
-      "videoURL": null,
-      "images": [
-        "https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1200&auto=format&fit=crop"
-      ]
-    }
-  },
-  {
-    "id": "fluid-sandbox",
-    "href": "project-template.html?id=fluid-sandbox",
-    "imgSrc": "https://images.unsplash.com/photo-1520975954732-35dd2229963a?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "Interactive Fluid Sandbox",
-    "title": "Interactive Fluid Sandbox",
-    "year": "2025",
-    "description": "Stable fluids + pressure solve on GPU.",
-    "tags": ["Simulation", "Compute"],
-    "dateCompleted": "May 2025",
-    "projectType": "Individual",
-    "githubURL": "https://github.com/yourhandle/fluid-sim",
-    "gameURL": "https://yourhandle.github.io/fluid-demo/",
-    "features": [
-      "Jos Stam's 'Stable Fluids' method.",
-      "Pressure solve using Jacobi iteration on the GPU.",
-      "Interactive (mouse-driven) dye and velocity injection."
-    ],
-    "myFeatures": [],
-    "media": {
-      "videoURL": null,
-      "images": [
-        "https://images.unsplash.com/photo-1520975954732-35dd2229963a?q=80&w=1200&auto=format&fit=crop"
-      ]
-    }
-  },
-  {
-    "id": "shader-gallery",
-    "href": "project-template.html?id=shader-gallery",
-    "imgSrc": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
-    "imgAlt": "WebGL Shader Gallery",
-    "title": "WebGL Shader Gallery",
-    "year": "2024",
-    "description": "A curated set of real‑time shader experiments.",
-    "tags": ["GLSL", "Web"],
-    "dateCompleted": "Ongoing",
-    "projectType": "Individual",
-    "githubURL": "https://github.com/yourhandle/shader-gallery",
-    "gameURL": null,
-    "features": [
-      "Collection of various shader effects (e.g., noise, ray marching).",
-      "Minimalist web interface to browse shaders.",
-      "Live-editable code for experimenting."
-    ],
-    "myFeatures": [],
-    "media": {
-      "videoURL": null,
-      "images": [
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+        "assets/area51-1.png",
+        "assets/area51-2.png"
       ]
     }
   }
