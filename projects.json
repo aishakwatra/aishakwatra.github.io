@@ -67,6 +67,39 @@
     }
   },
   {
+    "id": "soteria-xr",
+    "href": "project-template.html?id=soteria-xr",
+    "imgSrc": "assets/area51-1.png",
+    "imgAlt": "SoteriaXR - Fire Escape Training",
+    "title": "SoteriaXR - Fire Escape Training",
+    "year": "2024",
+    "description": "A 2D Platformer game developed on Unity for a term project in my first year.",
+    "longDescription": "This project was a 2D Platformer game developed for a first-year term project using Unity and C#. The goal was to learn the fundamentals of the Unity engine, including physics, sprite management, and level design. We explored techniques for wave generation and basic rendering.",
+    "tags": ["Unity", "XR", "Simulation"],
+    "dateCompleted": "December 2022",
+    "projectType": "Group",
+    "githubURL": "https://github.com/Vibhumi-Sermsilp/DT130-SEM1-2022",
+    "gameURL": null,
+    "features": [
+      { "name": "Scene Manager uses the Meta Quest MR Utility Kit (MRUK) to scan and load the user's real-world room spatial data, perform checks and prompts spatial scans if unavailable. Ensuring virtual hazards and equipment are perfectly aligned with physical furniture and walls.", "isMine": true },
+      { "name": "Custom Scenario Editor: A runtime editor allows the user to freely position virtual fire hazards, alarms, fire extinguishers, and exit points within their scanned environment to design unique training situations.", "isMine": false },
+      { "name": "Scenario setups, including object placements and positions, are accurately saved using Spatial Anchors and a custom JSON system so that custom layouts persist and can be reloaded across sessions.", "isMine": false },
+      { "name": "Fire Simulation: Fire and sprinkler behavior relies on a Voxel Grid system based on the room's spatial data; extinguishing is managed by a voxel health system that uses raycast intersection calculations (for the extinguisher and sprinklers) to reduce fire damage", "isMine": true },
+      { "name": "Fire extinguishers are fully interactive, requiring the user to physically remove the safety pin and operate the nozzle by following the official P.A.S.S. method", "isMine": false },
+      { "name": "The application includes two modes: a Step-by-Step Training Mode with continuous guided dialogue and an Unguided Testing Mode for autonomous performance evaluation.", "isMine": false },
+      { "name": "A Score System tracks adherence to safety protocol and remaining health, providing a final score and detailed checklist feedback on all completed and missed steps.", "isMine": true }
+
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": "https://www.youtube.com/embed/tGzSuIxrd4Y?si=NYrvnHC4g97LRgFZ",
+      "images": [
+        "assets/area51-1.png",
+        "assets/area51-2.png"
+      ]
+    }
+  },
+  {
     "id": "area-51",
     "href": "project-template.html?id=area-51",
     "imgSrc": "assets/area51-1.png",
