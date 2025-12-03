@@ -11,18 +11,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (project) {
     
-
           document.title = `${project.title} — Project`;
 
           document.getElementById("project-title").textContent = project.title;
           document.getElementById("project-type").textContent = project.projectType;
           document.getElementById("project-date").textContent = project.dateCompleted;
           
-
           document.getElementById("project-description").textContent = project.longDescription;
+          const isIndividual = project.projectType === "Individual Project";
+          const legend = document.querySelector('.feature-legend');
+          
+
+          if (legend) {
+            legend.style.display = isIndividual ? 'none' : 'block';
+          }
+      
 
           const linksContainer = document.getElementById("project-links");
           
+          linksContainer.innerHTML = ''; 
+
           if (project.githubURL) {
             linksContainer.innerHTML += `
               <a class="btn btn-ghost" href="${project.githubURL}" target="_blank" rel="noopener">GitHub</a>
@@ -35,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           
           const mediaContainer = document.getElementById("project-media");
-          
+          mediaContainer.innerHTML = ''; // Clear existing content
+
           if (project.media.videoURL) {
             mediaContainer.innerHTML += `
               <div class="video-wrap card">
@@ -54,21 +63,39 @@ document.addEventListener("DOMContentLoaded", () => {
             mediaContainer.innerHTML += `<img src="${imgSrc}" alt="${project.imgAlt}" class="project-image card">`;
           });
 
+          const lightbox = document.getElementById('lightbox');
+          const lightboxImg = document.getElementById('lightbox-img');
+          const closeBtn = document.querySelector('.lightbox-close');
+
+          if (lightbox && lightboxImg && closeBtn) {
+            mediaContainer.addEventListener('click', (e) => {
+              if (e.target.classList.contains('project-image')) {
+                lightbox.style.display = "block";
+                lightboxImg.src = e.target.src;
+              }
+            });
+            closeBtn.addEventListener('click', () => {
+              lightbox.style.display = "none";
+            });
+            lightbox.addEventListener('click', (e) => {
+              if (e.target === lightbox) {
+                lightbox.style.display = "none";
+              }
+            });
+          }
+          // ------------------------------------------
+
           const featuresList = document.getElementById("project-features");
-          
+          featuresList.innerHTML = ''; 
+
           project.features.forEach(feature => {
-            // Check if 'feature.isMine' is true.
-            // If it is, add the class. If not, add nothing.
-            const liClass = feature.isMine ? 'class="my-contribution"' : '';
-            
-            // Add the list item with the conditional class
+
+            const isHighlighted = isIndividual ? false : feature.isMine;     
+            const liClass = isHighlighted ? 'class="my-contribution"' : '';         
             featuresList.innerHTML += `<li ${liClass}>${feature.name}</li>`;
           });
    
-          
-
         } else {
-          // Handle case where project ID isn't found
           document.getElementById("project-title").textContent = "Project not found";
         }
       })

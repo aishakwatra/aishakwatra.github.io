@@ -1,5 +1,4 @@
 [
-
   
   {
     "id": "hell-for-leather",
@@ -35,6 +34,40 @@
       ]
     }
   },
+
+  {
+    "id": "flour-sim",
+    "href": "project-template.html?id=flour-sim",
+    "imgSrc": "assets/flour1.png",
+    "imgAlt": "GPU Flour Sifting Animation",
+    "title": "GPU Flour Sifting Animation",
+    "year": "2024",
+    "description": "A high-performance particle simulation modeling granular materials using OpenGL Compute Shaders with real-time accumulation and dynamic collisions.",
+    "longDescription": "This project is a high-performance simulation of granular materials, specifically flour, implemented using OpenGL and C++. The core of the simulation runs on the GPU via Compute Shaders, managing the physics and collision detection for a massive number of particles without CPU bottlenecks. A key feature is the heightmap accumulation system, which uses atomic image operations to allow particles to pile up realistically on a surface, dynamically modifying the terrain. The simulation also features a procedural collision system for the sifter, approximating a wire mesh grid to filter particles based on their trajectory and the sieve's movement.",
+    "tags": ["OpenGL", "C++", "Compute Shaders", "GLSL", "Simulation"],
+    "dateCompleted": "2024",
+    "projectType": "Individual Project",
+    "githubURL": "https://github.com/aishakwatra/flour-sifting-animation",
+    "gameURL": null,
+    "features": [
+      { "name": "Compute Shader Architecture: Offloaded physics calculations (gravity, velocity integration) to the GPU, enabling the simulation of massive particle counts at real-time framerates.", "isMine": true },
+      { "name": "Heightmap Accumulation: Implemented a deposition algorithm using GLSL `imageAtomicAdd` to transfer particle mass to a 2D texture, creating accurate piles and terrain deformation.", "isMine": true },
+      { "name": "Procedural Mesh Collision: Developed a shader-based collision system that analytically models the sifter's wire grid (`sifterBarAt`), allowing particles to either bounce off wires or pass through holes based on position.", "isMine": true },
+      { "name": "Dynamic Sifter Animation: Integrated a sine-wave based motion controller to simulate the shaking and sifting action, which directly influences particle momentum.", "isMine": true },
+      { "name": "Particle Recycling System: Implemented a boundary check system that seamlessly respawns particles falling below the kill-plane, ensuring a continuous flow of material.", "isMine": true }
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": "https://www.youtube.com/embed/b25BQ1ls_pw?si=3FQkQIgZIu1FAP7X",
+      "images": [
+        "assets/flour1.png",
+        "assets/flour3.png",
+        "assets/flour4.png",
+        "assets/flour2.png"
+      ]
+    }
+  },
+
   {
     "id": "cuda-raytrace",
     "href": "project-template.html?id=cuda-raytrace",
@@ -69,16 +102,16 @@
   {
     "id": "soteria-xr",
     "href": "project-template.html?id=soteria-xr",
-    "imgSrc": "assets/area51-1.png",
+    "imgSrc": "assets/soteriaXR-5.png",
     "imgAlt": "SoteriaXR - Fire Escape Training",
     "title": "SoteriaXR - Fire Escape Training",
     "year": "2024",
-    "description": "A 2D Platformer game developed on Unity for a term project in my first year.",
-    "longDescription": "This project was a 2D Platformer game developed for a first-year term project using Unity and C#. The goal was to learn the fundamentals of the Unity engine, including physics, sprite management, and level design. We explored techniques for wave generation and basic rendering.",
+    "description": "Customizable fire escape training tool developed for the Meta Quest 3.",
+    "longDescription": "This project is a Mixed Reality (MR) training application developed for the Meta Quest 3 headset, designed to overcome the limitations of traditional and generic Virtual Reality safety programs. By blending virtual hazards and tools directly into the user's actual physical environment, Soteria XR provides highly personalized and practical fire safety drills. A central feature is the customizable scenario editor, which allows users to map fire locations and necessary equipment to their real surroundings, ensuring the training is relevant to the space they inhabit every day.",
     "tags": ["Unity", "XR", "Simulation"],
-    "dateCompleted": "December 2022",
+    "dateCompleted": "June 2025",
     "projectType": "Group",
-    "githubURL": "https://github.com/Vibhumi-Sermsilp/DT130-SEM1-2022",
+    "githubURL": null,
     "gameURL": null,
     "features": [
       { "name": "Scene Manager uses the Meta Quest MR Utility Kit (MRUK) to scan and load the user's real-world room spatial data, perform checks and prompts spatial scans if unavailable. Ensuring virtual hazards and equipment are perfectly aligned with physical furniture and walls.", "isMine": true },
@@ -92,10 +125,13 @@
     ],
     "myFeatures": [],
     "media": {
-      "videoURL": "https://www.youtube.com/embed/tGzSuIxrd4Y?si=NYrvnHC4g97LRgFZ",
+      "videoURL": "https://www.youtube.com/embed/g8RNuf9I1_c?si=8Bq_RNWCepFMedjN",
       "images": [
-        "assets/area51-1.png",
-        "assets/area51-2.png"
+        "assets/soteriaXR-1.png",
+        "assets/soteriaXR-2.png",
+        "assets/soteriaXR-3.png",
+        "assets/soteriaXR-4.png",
+        "assets/soteriaXR-5.png"
       ]
     }
   },
