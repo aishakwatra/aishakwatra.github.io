@@ -9,7 +9,7 @@
     "year": "2024",
     "description": "OpenGL Racing Game with a Physically Based Rendering (PBR) pipeline, custom vehicle physics, and optimized real-time collision and suspension dynamics.",
     "longDescription": "This 3D racing simulation was a third-year OpenGL project focused on implementing advanced graphics and physics systems from the ground up. The project features a complete Physically Based Rendering (PBR) pipeline for realistic, physically-grounded materials and lighting, all set within a 3D skybox. A core technical component is the optimized collision engine, which uses a spatial grid to accelerate queries. This allows for real-time suspension physics (via ray-triangle intersection queries) and accurate track collisions (via AABB checks). The demo is complete with vehicle physics, a flexible follow-cam, 3D model loading via Assimp, and a full UI with a lap timer.",
-    "tags": ["OpenGL", "C++", "PBR"],
+    "tags": ["C++", "OpenGL", "PBR"],
     "dateCompleted": "2024",
     "projectType": "Pair Project",
     "githubURL": "https://github.com/aishakwatra/racingsimulation",
@@ -41,11 +41,11 @@
     "imgSrc": "assets/flour1.png",
     "imgAlt": "GPU Flour Sifting Animation",
     "title": "GPU Flour Sifting Animation",
-    "year": "2024",
+    "year": "2025",
     "description": "A high-performance particle simulation modeling granular materials using OpenGL Compute Shaders with real-time accumulation and dynamic collisions.",
     "longDescription": "This project is a high-performance simulation of granular materials, specifically flour, implemented using OpenGL and C++. The core of the simulation runs on the GPU via Compute Shaders, managing the physics and collision detection for a massive number of particles without CPU bottlenecks. A key feature is the heightmap accumulation system, which uses atomic image operations to allow particles to pile up realistically on a surface, dynamically modifying the terrain. The simulation also features a procedural collision system for the sifter, approximating a wire mesh grid to filter particles based on their trajectory and the sieve's movement.",
-    "tags": ["OpenGL", "C++", "Compute Shaders", "GLSL", "Simulation"],
-    "dateCompleted": "2024",
+    "tags": ["C++", "OpenGL", "Compute Shaders", "GLSL", "Simulation"],
+    "dateCompleted": "Ongoing",
     "projectType": "Individual Project",
     "githubURL": "https://github.com/aishakwatra/flour-sifting-animation",
     "gameURL": null,
@@ -68,6 +68,40 @@
     }
   },
 
+
+  {
+    "id": "hmd-navigator",
+    "href": "project-template.html?id=hmd-navigator",
+    "imgSrc": "assets/hmd1.png",
+    "imgAlt": "HMD Navigator - Quest 3",
+    "title": "HMD Navigator",
+    "year": "2024",
+    "description": "A Mixed Reality prototype leveraging Meta Quest 3's Passthrough and Depth APIs for real-time marker detection and world-space alignment.",
+    "longDescription": "HMD Navigator is a technical research prototype designed to investigate the capabilities of the Meta Quest 3's advanced mixed reality sensors. The project focuses on integrating the new Passthrough and Depth APIs to detect physical markers directly from the headset's camera feed. The core utility involves mapping these detected markers to 3D world space to facilitate precise user positioning. The project involved extensive device-level experimentation to evaluate the stability and limitations of the Quest 3's spatial mapping technology in real-world environments.",
+    "tags": ["Meta Quest 3", "Mixed Reality", "Passthrough API", "Depth API", "C#", "Unity"],
+    "dateCompleted": "2025",
+    "projectType": "Pair Project",
+    "githubURL": null,
+    "gameURL": null,
+    "features": [
+      { "name": "Investigated Meta Quest 3’s new Passthrough and Depth APIs to prototype marker detection directly from the camera feed.", "isMine": true },
+      { "name": "Implemented a depth-based world-space positioning system by casting rays into the environment to estimate the physical location of detected markers.", "isMine": true },
+      { "name": "Built a user–marker calibration method that determines the user’s position relative to the closest marker, enabling alignment with a virtual navigation graph.", "isMine": true },
+      { "name": "Conducted technical experimentation and device-level testing to evaluate the accuracy, stability, and limitations of the implemented marker detection system.", "isMine": true },
+      { "name": "Live Map Display: Renders an interactive 3D model of the environment that tracks and follows the user's hand in real-time.", "isMine": false },
+      { "name": "Route Selection: Allows users to select a destination on the live map to generate a virtual path, calculating the route on the digital twin.", "isMine": false }
+    ],
+    "myFeatures": [],
+    "media": {
+      "videoURL": "https://www.youtube.com/embed/kw28rZCUWcs?si=ljh6aZkZLYtTvADs",
+      "images": [
+
+      ]
+    }
+  },
+
+
+
   {
     "id": "cuda-raytrace",
     "href": "project-template.html?id=cuda-raytrace",
@@ -77,7 +111,7 @@
     "year": "2024",
     "description": "An extension of a professor-provided real-time CUDA ray tracing engine. The project implements ray tracing for triangles, procedurally generated object textures, interactive camera movements, and dynamic collision detection in real-time.",
     "longDescription": "This project is an interactive mini-game built for a low-level programming class, extending a real-time CUDA ray tracing engine provided by my professor. The experience takes the user through multiple unique rooms using WASD controls. It begins in an Infinity Mirrors room, inspired by Yayoi Kusama, which uses highly reflective surfaces to create a visually infinite space. The final room features dynamic, floating spheres that collide and bounce off the environment in real-time.",
-    "tags": ["CUDA", "C++", "Parallel Programming"],
+    "tags": ["CUDA", "C++", "Parallel Programming", "GPU"],
     "dateCompleted": "2024",
     "projectType": "Individual Project",
     "githubURL": "https://github.com/pongsagon/DDCT_CUDA_Raytrace",
@@ -95,7 +129,11 @@
       "videoURL": "https://www.youtube.com/embed/6XbfCoaFQCI?si=uEWPyFNPpgSCWcGU",
       "images": [
         "assets/cuda1.png",
-        "assets/cuda2.png"
+        "assets/cuda2.png",
+        "assets/cuda3.png",
+        "assets/cuda4.png",
+        "assets/cuda5.png",
+        "assets/cuda6.png"
       ]
     }
   },
@@ -105,10 +143,10 @@
     "imgSrc": "assets/soteriaXR-5.png",
     "imgAlt": "SoteriaXR - Fire Escape Training",
     "title": "SoteriaXR - Fire Escape Training",
-    "year": "2024",
+    "year": "2025",
     "description": "Customizable fire escape training tool developed for the Meta Quest 3.",
     "longDescription": "This project is a Mixed Reality (MR) training application developed for the Meta Quest 3 headset, designed to overcome the limitations of traditional and generic Virtual Reality safety programs. By blending virtual hazards and tools directly into the user's actual physical environment, Soteria XR provides highly personalized and practical fire safety drills. A central feature is the customizable scenario editor, which allows users to map fire locations and necessary equipment to their real surroundings, ensuring the training is relevant to the space they inhabit every day.",
-    "tags": ["Unity", "XR", "Simulation"],
+    "tags": ["Meta Quest 3", "Mixed Reality", "Unity", "Training Tool"],
     "dateCompleted": "June 2025",
     "projectType": "Group",
     "githubURL": null,
@@ -135,33 +173,41 @@
       ]
     }
   },
+
   {
-    "id": "area-51",
-    "href": "project-template.html?id=area-51",
-    "imgSrc": "assets/area51-1.png",
-    "imgAlt": "Area51 - They can't stop us all",
-    "title": "Area51 - They can't stop us all",
-    "year": "2022",
-    "description": "A 2D Platformer game developed on Unity for a term project in my first year.",
-    "longDescription": "This project was a 2D Platformer game developed for a first-year term project using Unity and C#. The goal was to learn the fundamentals of the Unity engine, including physics, sprite management, and level design. We explored techniques for wave generation and basic rendering.",
-    "tags": ["Unity", "C#", "2D Game Development"],
-    "dateCompleted": "December 2022",
-    "projectType": "Group",
-    "githubURL": "https://github.com/Vibhumi-Sermsilp/DT130-SEM1-2022",
-    "gameURL": null,
+    "id": "ticking-tea-time",
+    "href": "project-template.html?id=ticking-tea-time",
+    "imgSrc": "assets/ttt1.png",
+    "imgAlt": "Ticking Tea Time - Detective Game",
+    "title": "Ticking Tea Time",
+    "year": "2024",
+    "description": "A 2D point-and-click detective game built on a custom engine.",
+    "longDescription": "Developed as a second-year group project, Ticking Tea Time is a 2D point-and-click detective adventure built entirely on a custom C++ game engine. Players take on the role of an undercover waiter on the Hesperia Express, using tea service as a cover to investigate suspects and defuse a ticking bomb. The game seamlessly blends kitchen simulation mechanics with deep, branching storytelling. It has been widely recognized for its narrative depth and technical execution, garnering over 600 downloads and winning both the BIDC Rising Star Award and the PlayPrime Award for Best Narrative at the Thailand International Game Showcase 2024.",
+    "tags": ["C++", "Custom Engine", "2D Game", "BIDC Rising Star Award", "Play Prime best Narrative Award"],
+    "dateCompleted": "2024",
+    "projectType": "Group Project",
+    "githubURL": "https://github.com/FadeZx/DetectiveSimulation",
+    "gameURL": "https://maijingmaichai.itch.io/ticking-tea-time",
     "features": [
-      { "name": "Real-time Fast Fourier Transform (FFT) for wave generation.", "isMine": false },
-      { "name": "Screen-Space Reflections (SSR) for water surface.", "isMine": false },
-      { "name": "Foam simulation based on wave curvature.", "isMine": false },
-      { "name": "Physically-Based Rendering (PBR) material properties.", "isMine": false }
+      { "name": "Input & UI Systems: Implemented robust input handling and UI systems essential for point-and-click gameplay, including interactive menus and pop-ups to enhance usability.", "isMine": true },
+      { "name": "Interactive Journal: Developed a key gameplay mechanic—the interactive journal—utilizing backend data management to dynamically reflect player progress and gathered clues.", "isMine": true },
+      { "name": "Kitchen Simulation: Designed and implemented the kitchen simulation scenes, creating intricate UI logic to manage tea preparation mechanics.", "isMine": true },
+      { "name": "Dialogue System Integration: Built a flexible event system that streamlined dialogue integration, enabling the team to easily trigger branching narrative events based on player choices.", "isMine": true },
+      { "name": "Award-Winning: Recognized with BIDC's Rising Star Awards for Game 2024 and the PlayPrime Award for Best Narrative for its engaging storytelling and design.", "isMine": true },
+      { "name": "Custom Engine Architecture: The game is built from the ground up using a custom 2D game engine written in C++.", "isMine": true }
     ],
     "myFeatures": [],
     "media": {
-      "videoURL": "https://www.youtube.com/embed/tGzSuIxrd4Y?si=NYrvnHC4g97LRgFZ",
+      "videoURL": "https://www.youtube.com/embed/YE5LaQZVXVQ?si=YVgmDjMgYq1P-dwr",
       "images": [
-        "assets/area51-1.png",
-        "assets/area51-2.png"
+        "assets/ttt1.png",
+        "assets/ttt6.png",
+        "assets/ttt3.png",
+        "assets/ttt4.png",
+        "assets/ttt5.png",
+        "assets/ttt2.png"
       ]
     }
   }
+
 ]
